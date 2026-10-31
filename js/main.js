@@ -13,10 +13,10 @@
   if (city) city = city.charAt(0).toUpperCase() + city.slice(1);
 
   if (city) {
-    $('#heroCity').textContent = city;
+    $('#heroCity').textContent = 'город ' + city;
     $('#leadCity').textContent = ' в городе ' + city;
-    $$('.js-city-acc').forEach(function (el) { el.textContent = city; });
-    $$('.js-apply-label').forEach(function (el) { el.textContent = 'Занять ' + city; });
+    $$('.js-city-acc').forEach(function (el) { el.textContent = 'город ' + city; });
+    $$('.js-apply-label').forEach(function (el) { el.textContent = 'Заявка: город ' + city; });
     document.title = 'Франшиза АвтоМастер24 — ' + city;
   }
 
